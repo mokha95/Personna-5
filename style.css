@@ -9,10 +9,12 @@
     
      :root {
         --couleur-sombre: #363636;
+        --couleur-claire-hover: #8a8585;
         --couleur-blanc: #fff;
         --couleur-noir: #000;
         --couleur-bleue: #0070D1;
         --couleur-btn: #d53b00;
+        --couleur-btn-hover: #7d2503;
     }
     
     body {
@@ -229,6 +231,11 @@
         border-radius: 9999px;
     }
     
+    .btn-panier button:hover {
+        background-color: var(--couleur-btn-hover);
+        cursor: pointer;
+    }
+    
     .coeur .fa-heart-o {
         font-size: 15px;
         margin-left: 5px;
@@ -237,8 +244,14 @@
         padding: 10px;
         position: absolute;
     }
+    
+    .coeur .fa-heart-o:hover {
+        background-color: var(--couleur-claire-hover);
+        cursor: pointer;
+    }
     /* main */
     
     main {
         height: 80vh;
+        background-color: var(--couleur-noir);
     }
