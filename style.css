@@ -4,6 +4,7 @@
         box-sizing: border-box;
         margin: 0;
         padding: 0;
+        text-decoration: none;
     }
     
      :root {
@@ -11,6 +12,7 @@
         --couleur-blanc: #fff;
         --couleur-noir: #000;
         --couleur-bleue: #0070D1;
+        --couleur-btn: #d53b00;
     }
     
     body {
@@ -147,6 +149,7 @@
     .Playstation-store {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
         margin: 1.5% 1%;
     }
     
@@ -179,4 +182,63 @@
         background: url(./img/persona5\ background.webp) center center/cover;
         height: 317px;
         width: 100%;
+        position: relative;
+    }
+    
+    .personna .persona5 {
+        background: rgba(31, 32, 36, .97);
+        width: 465px;
+        height: 270px;
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        padding: 35px 50px 20px;
+    }
+    
+    .persona5 p {
+        color: var(--couleur-blanc);
+        font-size: 30px;
+    }
+    
+    .persona5 :nth-child(2) {
+        padding: 20px 0 10px;
+        color: var(--couleur-blanc);
+        font-size: 10px;
+    }
+    
+    .persona5 .ps4 {
+        color: var(--couleur-blanc);
+        font-size: 10px;
+        border: 1px solid var(--couleur-blanc);
+        padding: 2px;
+    }
+    
+    .persona5 .price {
+        padding: 25px 0 20px;
+        color: var(--couleur-blanc);
+        font-size: 25px;
+    }
+    
+    .btn-panier button {
+        background-color: var(--couleur-btn);
+        border: none;
+        height: 34px;
+        width: 335px;
+        font-size: 15px;
+        color: var(--couleur-blanc);
+        border-radius: 9999px;
+    }
+    
+    .coeur .fa-heart-o {
+        font-size: 15px;
+        margin-left: 5px;
+        background-color: var(--couleur-sombre);
+        border-radius: 9999px;
+        padding: 10px;
+        position: absolute;
+    }
+    /* main */
+    
+    main {
+        height: 80vh;
     }
