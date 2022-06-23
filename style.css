@@ -1,0 +1,182 @@
+    *,
+     ::before,
+     ::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+     :root {
+        --couleur-sombre: #363636;
+        --couleur-blanc: #fff;
+        --couleur-noir: #000;
+        --couleur-bleue: #0070D1;
+    }
+    
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    header {
+        background-color: #000;
+        width: 100%;
+        height: 50px;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .logo {
+        width: 80px;
+        height: auto;
+        position: absolute;
+        right: 10px;
+    }
+    
+    .liste-nav {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .item-nav {
+        display: inline-block;
+        line-height: 45px;
+        margin: 0px 11px;
+        position: relative;
+    }
+    
+    .item-nav .fa-chevron-down {
+        color: #757575;
+        bottom: 11px;
+        position: absolute;
+        right: -15px;
+        font-size: 10px;
+    }
+    
+    .item-nav a {
+        text-decoration: none;
+        color: #757575;
+        font-size: 11px;
+        font-weight: bold;
+    }
+    
+    .item-nav .fa-playstation {
+        color: var(--couleur-bleue);
+        font-size: 22px;
+    }
+    
+    .item-nav a:hover {
+        color: var(--couleur-bleue);
+    }
+    
+    .btn-toggle-container {
+        display: none;
+    }
+    
+    .btn-toggle-container img {
+        width: 20px;
+    }
+    /* barre de recherche */
+    
+    .barre-de-recherche {
+        display: flex;
+        align-items: center;
+        margin-right: 2%;
+    }
+    
+    .barre-de-recherche .btn {
+        padding-right: 20px;
+    }
+    
+    .btn a {
+        text-decoration: none;
+        background-color: #363636;
+        color: #fff;
+        border-radius: 20px;
+        padding: 3px 8px;
+        font-size: 14px;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    .barre-de-recherche .fa-search {
+        color: var(--couleur-sombre);
+    }
+    
+    @media screen and (max-width:699px) {
+        nav {
+            padding-top: 4%;
+            margin: 0 2%;
+        }
+        .barre-de-recherche .btn {
+            padding: 0;
+        }
+        .btn-toggle-container {
+            display: block;
+            position: absolute;
+            padding-bottom: 20px;
+            box-shadow: 2px 8px 9px -10px #000000;
+            width: 100%;
+        }
+        .liste-nav {
+            position: relative;
+            top: 70px;
+            display: none;
+        }
+        .item-nav {
+            display: block;
+        }
+        header {
+            display: none;
+        }
+        .barre-de-recherche {
+            position: absolute;
+            right: 10px;
+        }
+        .barre-de-recherche .search {
+            display: none;
+        }
+        .liste-nav.active-menu {
+            display: block;
+        }
+    }
+    /* ************************PLAYSTATION STORE*************************** */
+    
+    .Playstation-store {
+        display: flex;
+        align-items: center;
+        margin: 1.5% 1%;
+    }
+    
+    .Playstation-store .logo-play {
+        margin-right: 170px;
+    }
+    
+    .logo-play .fa-gamepad {
+        color: var(--couleur-bleue);
+        font-size: 20px;
+    }
+    
+    .logo-play .ps {
+        font-weight: bold;
+    }
+    
+    .logo-play .tm {
+        font-size: 3px;
+        font-weight: bold;
+    }
+    
+    .sortie a {
+        text-decoration: none;
+        margin-right: 30px;
+        color: var(--couleur-noir);
+    }
+    /* *******************************Personna*********************** */
+    
+    .personna {
+        background: url(./img/persona5\ background.webp) center center/cover;
+        height: 317px;
+        width: 100%;
+    }
