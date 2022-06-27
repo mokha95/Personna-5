@@ -8,13 +8,14 @@
     }
     
      :root {
-        --couleur-sombre: #363636;
+        --couleur-sombre: #1E1F23;
         --couleur-claire-hover: #8a8585;
         --couleur-blanc: #fff;
         --couleur-noir: #000;
         --couleur-bleue: #0070D1;
         --couleur-btn: #d53b00;
         --couleur-btn-hover: #7d2503;
+        --couleur-background: #090A0A;
     }
     
     body {
@@ -172,6 +173,7 @@
     
     .logo-play .ps {
         font-weight: bold;
+        cursor: pointer;
     }
     
     .logo-play .tm {
@@ -305,13 +307,13 @@
     /* main */
     
     main {
-        height: 80vh;
-        background-color: var(--couleur-noir);
+        height: 40vh;
+        background-color: var(--couleur-background);
     }
     
     .pegi16 {
         position: absolute;
-        right: 25%;
+        right: 30%;
         padding-top: 30px;
     }
     
@@ -337,5 +339,147 @@
     }
     
     .bloc2 {
-        background-color: red;
+        background-color: var(--couleur-background);
+        height: 20vh;
+    }
+    
+    .bloc2 {
+        color: var(--couleur-blanc);
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .bloc2 a {
+        color: var(--couleur-blanc);
+    }
+    
+    .bloc2 .joueur1 {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .bloc2 .joueur2 {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .bloc2 i {
+        margin-right: 5px;
+    }
+    
+    .joueur1 .link-premeier {
+        margin-bottom: 10px;
+    }
+    
+    .joueur2 .link-one {
+        margin-bottom: 10px;
+    }
+    
+    @media screen and (max-width:1300px) {
+        .pegi16 {
+            position: absolute;
+            right: 15%;
+        }
+    }
+    /* *******************************EDITIONS*********************************** */
+    
+    .edition {
+        background-color: var(--couleur-background);
+        padding: 0 40px;
+    }
+    
+    .edition h1 {
+        color: var(--couleur-blanc);
+        background-color: var(--couleur-background);
+        text-align: center;
+        font-weight: 400;
+        font-size: 30px;
+        padding-bottom: 35px;
+    }
+    
+    .edition .personna-carte {
+        display: flex;
+        gap: 10px;
+        /* justify-content: center; */
+        align-items: center;
+        /* width: 1192px; */
+    }
+    
+    .personna-carte .ultimate {
+        width: 592px;
+        height: 530px;
+        background-color: var(--couleur-noir);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .personna-carte img {
+        width: 335px;
+        height: 333px;
+        margin: 0 auto
+    }
+    
+    .ultimate .texte {
+        background: var(--couleur-sombre);
+        height: 198px;
+    }
+    
+    .texte p {
+        text-align: center;
+        color: var(--couleur-blanc);
+        padding: 20px 0;
+    }
+    
+    .texte span {
+        text-align: center;
+    }
+    
+    .texte .prix,
+    .barrer {
+        padding-top: 20px;
+        color: var(--couleur-blanc);
+    }
+    
+    .texte .prix {
+        font-size: 25px;
+        font-weight: 200;
+    }
+    
+    .texte .barrer {
+        color: var(--couleur-claire-hover);
+        text-decoration: line-through;
+    }
+    /* part3 */
+    
+    .part3 {
+        padding-top: 10%;
+        background-color: var(--couleur-background);
+    }
+    
+    .texte .economie {
+        color: var(--couleur-blanc);
+    }
+    
+    .texte a {
+        color: var(--couleur-claire-hover);
+        font-size: 12px;
+        padding-bottom: 20px;
+    }
+    
+    .btn-panier-2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .btn-panier-2 button {
+        background-color: var(--couleur-btn);
+        border: none;
+        height: 34px;
+        width: 335px;
+        font-size: 15px;
+        color: var(--couleur-blanc);
+        border-radius: 9999px;
+        margin-top: 20px;
     }
