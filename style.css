@@ -292,16 +292,18 @@
     }
     
     .coeur .fa-heart-o {
-        font-size: 15px;
+        font-size: 20px;
         margin-left: 5px;
-        background-color: var(--couleur-sombre);
+        background-color: rgb(55, 52, 52);
         border-radius: 9999px;
         padding: 10px;
         position: absolute;
+        color: var(--couleur-blanc);
+        top: 17px;
     }
     
     .coeur .fa-heart-o:hover {
-        background-color: var(--couleur-claire-hover);
+        background-color: rgb(69, 69, 69);
         cursor: pointer;
     }
     /* main */
@@ -471,15 +473,112 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        position: relative;
     }
     
     .btn-panier-2 button {
         background-color: var(--couleur-btn);
         border: none;
         height: 34px;
-        width: 335px;
+        width: 80%;
         font-size: 15px;
         color: var(--couleur-blanc);
         border-radius: 9999px;
         margin-top: 20px;
+    }
+    
+    .btn-panier-2 button:hover {
+        background-color: rgb(154, 43, 2);
+        cursor: pointer;
+    }
+    
+    .texte .marge-droite {
+        margin-left: 30px;
+    }
+    
+    @media screen and (max-width:1043px) {
+        .personna .persona5 {
+            width: 440px;
+        }
+        .pegi16 {
+            position: absolute;
+            left: 15%;
+            bottom: 19%;
+        }
+        .personna-carte .ultimate {
+            width: 50%;
+            height: 530px;
+            background-color: var(--couleur-noir);
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .btn-panier-2 button {
+            width: 50%;
+        }
+    }
+    /* extensions */
+    
+    .extensions-part h2 {
+        color: var(--couleur-blanc);
+        background-color: var(--couleur-background);
+        text-align: center;
+        font-weight: 400;
+        font-size: 30px;
+        padding-bottom: 35px;
+        padding-top: 4%;
+    }
+    
+    .extensions-part {
+        background-color: var(--couleur-background);
+        padding: 0 40px;
+    }
+    
+    .pancarte {
+        display: flex;
+    }
+    
+    .pancarte img {
+        width: 286px;
+        height: 286px;
+        padding-bottom: 5px;
+        border-radius: 4px;
+    }
+    
+    .pancarte .cars {
+        display: flex;
+        flex-direction: column;
+        margin-right: 10px
+    }
+    
+    .cars {
+        color: var(--couleur-blanc);
+    }
+    
+    .cars a {
+        /* width: 230px; */
+        font-size: 13px;
+        color: var(--couleur-blanc);
+        line-height: 20px;
+    }
+    
+    .cars .small {
+        font-size: 12px;
+        color: var(--couleur-claire-hover);
+    }
+    
+    .bouton-bas {
+        padding-top: 5%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .bouton-bas button {
+        color: var(--couleur-blanc);
+        /* background: var(--couleur-background); */
+        background-color: crimson;
+        padding: 10px 15px;
+        border-radius: 9999px;
+        border: none;
+        font-weight: bold;
     }
