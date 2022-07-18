@@ -702,7 +702,8 @@
         font-size: 14px;
     }
     
-    .bloc-sony p:hover {
+    .bloc-sony p:hover,
+    .fin:hover {
         color: rgb(214, 214, 214);
         cursor: pointer;
     }
