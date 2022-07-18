@@ -575,10 +575,140 @@
     
     .bouton-bas button {
         color: var(--couleur-blanc);
-        /* background: var(--couleur-background); */
-        background-color: crimson;
+        background: var(--couleur-background);
+        /* background-color: crimson; */
         padding: 10px 15px;
         border-radius: 9999px;
         border: none;
         font-weight: bold;
+        margin-bottom: 4%;
+    }
+    
+    .bouton-bas button:hover {
+        background: #757575;
+        cursor: pointer;
+    }
+    /*********************************** infos jeux **********************************/
+    
+    .informations {
+        text-align: center;
+        color: var(--couleur-blanc);
+        font-size: 30px;
+        padding-bottom: 50px;
+    }
+    
+    .infos-jeux {
+        /* margin-top: 4%; */
+        background-color: rgba(31, 32, 36, .97);
+        max-width: 847px;
+        height: 309px;
+        margin: auto;
+    }
+    
+    .infos-jeux .texte-rectangle p {
+        color: #b2b2b0;
+        font-size: 13px;
+        line-height: 20px;
+    }
+    
+    .infos-jeux .texte-rectangle {
+        padding: 20px 20px;
+    }
+    
+    .texte-rectangle p {
+        padding-bottom: 20px;
+    }
+    /* plateforme */
+    
+    .plateforme {
+        padding-top: 4%;
+        background-color: var(--couleur-background);
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+        gap: 100px;
+    }
+    
+    .plateforme .systeme-ps4 {
+        width: 400px;
+    }
+    
+    .plateforme .medium p {
+        padding-bottom: 20px;
+        font-size: 12px;
+    }
+    
+    .plateforme .millieu p {
+        padding-bottom: 20px;
+        font-weight: bold;
+        font-size: 12px;
+    }
+    
+    .plateforme .systeme-ps4 p {
+        line-height: 20px;
+        font-size: 12px;
+    }
+    
+    .plateforme p {
+        color: var(--couleur-blanc);
+        font-size: 13px;
+    }
+    
+    .systeme-ps4 p {
+        padding-bottom: 20px;
+    }
+    /* sega */
+    
+    .sega p {
+        padding: 4% 0 4%;
+        background-color: var(--couleur-background);
+        color: var(--couleur-blanc);
+        text-align: center;
+        font-size: 15px;
+    }
+    
+    footer {
+        background-color: #003697;
+        padding: 4% 4%;
+    }
+    
+    footer {
+        color: var(--couleur-blanc);
+    }
+    
+    footer .symbole {
+        display: flex;
+        align-items: center;
+    }
+    
+    .symbole .play-4 {
+        margin-right: 50px;
+        font-size: 30px;
+    }
+    
+    .symbole .fa-globe {
+        padding-right: 10px;
+    }
+    
+    .bloc-sony {
+        margin-top: 4%;
+        width: 1025px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .bloc-sony p {
+        padding-bottom: 20px;
+        font-size: 14px;
+    }
+    
+    .bloc-sony p:hover {
+        color: rgb(214, 214, 214);
+        cursor: pointer;
+    }
+    
+    footer .fin {
+        margin-top: 5%;
+        text-align: center;
+        font-size: 16px;
     }
