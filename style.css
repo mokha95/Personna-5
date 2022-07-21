@@ -109,51 +109,7 @@
     .barre-de-recherche .fa-search {
         color: var(--couleur-sombre);
     }
-    
-    @media screen and (max-width:699px) {
-        nav {
-            padding-top: 4%;
-            margin: 0 2%;
-        }
-        .barre-de-recherche .btn {
-            padding: 0;
-        }
-        .btn-toggle-container {
-            display: block;
-            position: absolute;
-            padding-bottom: 20px;
-            box-shadow: 2px 8px 9px -10px #000000;
-            width: 100%;
-        }
-        .liste-nav {
-            position: relative;
-            top: 70px;
-            display: none;
-        }
-        .item-nav {
-            display: block;
-        }
-        header {
-            display: none;
-        }
-        .barre-de-recherche {
-            position: absolute;
-            right: 10px;
-        }
-        .barre-de-recherche .search {
-            display: none;
-        }
-        .liste-nav.active-menu {
-            display: block;
-        }
-    }
     /* ************************PLAYSTATION STORE*************************** */
-    
-    @media screen and (max-width:704px) {
-        .Playstation-store {
-            padding-top: 10%;
-        }
-    }
     
     .Playstation-store {
         display: flex;
@@ -188,12 +144,6 @@
         font-weight: bold;
         /* flex-wrap: nowrap;  */
         font-size: 14px;
-    }
-    
-    @media screen and (max-width:1030px) {
-        .Playstation-store .logo-play {
-            padding-bottom: 40px;
-        }
     }
     /* *******************************Personna*********************** */
     
@@ -250,40 +200,6 @@
         font-size: 15px;
         color: var(--couleur-blanc);
         border-radius: 9999px;
-    }
-    
-    @media screen and (max-width:560px) {
-        .personna .persona5 {
-            width: 85%;
-            height: auto;
-        }
-        .btn-panier button {
-            max-width: 80%;
-        }
-    }
-    
-    @media screen and (max-width:448px) {
-        .Playstation-store .logo-play {
-            padding-top: 20px;
-        }
-        .btn-panier button {
-            max-width: 60%;
-        }
-    }
-    
-    @media screen and (max-width:370px) {
-        .btn-panier button {
-            max-width: 45%;
-        }
-    }
-    
-    @media screen and (max-width:305px) {
-        .btn-panier button {
-            max-width: 30%;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis
-        }
     }
     
     .btn-panier button:hover {
@@ -375,13 +291,6 @@
     
     .joueur2 .link-one {
         margin-bottom: 10px;
-    }
-    
-    @media screen and (max-width:1300px) {
-        .pegi16 {
-            position: absolute;
-            right: 15%;
-        }
     }
     /* *******************************EDITIONS*********************************** */
     
@@ -494,28 +403,6 @@
     
     .texte .marge-droite {
         margin-left: 30px;
-    }
-    
-    @media screen and (max-width:1043px) {
-        .personna .persona5 {
-            width: 440px;
-        }
-        .pegi16 {
-            position: absolute;
-            left: 15%;
-            bottom: 19%;
-        }
-        .personna-carte .ultimate {
-            width: 50%;
-            height: 530px;
-            background-color: var(--couleur-noir);
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-        }
-        .btn-panier-2 button {
-            width: 50%;
-        }
     }
     /* extensions */
     
