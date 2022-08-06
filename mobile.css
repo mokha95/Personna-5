@@ -20,6 +20,9 @@
         .btn-panier button {
             max-width: 60%;
         }
+        .infos-jeux {
+            height: 800px;
+        }
     }
     
     @media screen and (max-width:560px) {
@@ -76,20 +79,45 @@
         }
     }
     
+    @media screen and (max-width:900px) {
+        .pancarte {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .infos-jeux {
+            height: 470px;
+        }
+        .infos-jeux .texte-rectangle {
+            padding: 10px 10px;
+        }
+        .infos-jeux .texte-rectangle p {
+            padding-bottom: 0;
+            font-size: 13px;
+            /* text-align: justify; */
+        }
+    }
+    
     @media screen and (max-width:1030px) {
         .Playstation-store .logo-play {
             padding-bottom: 40px;
+        }
+        .personna .persona5 {
+            margin-bottom: 20px;
+        }
+        .pegi16 {
+            bottom: -33%;
+            left: 10%;
+        }
+        .bloc2 {
+            padding: 3% 0;
         }
     }
     
     @media screen and (max-width:1043px) {
         .personna .persona5 {
             width: 440px;
-        }
-        .pegi16 {
-            position: absolute;
-            left: 15%;
-            bottom: 19%;
         }
         .personna-carte .ultimate {
             width: 50%;
