@@ -1,0 +1,30 @@
+    *,
+     ::before,
+     ::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+    }
+    
+     :root {
+        --couleur-sombre: #1E1F23;
+        --couleur-claire-hover: #8a8585;
+        --couleur-blanc: #fff;
+        --couleur-noir: #000;
+        --couleur-bleue: #0070D1;
+        --couleur-btn: #d53b00;
+        --couleur-btn-hover: #7d2503;
+        --couleur-background: #090A0A;
+    }
+    
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .container {
+        height: 100vh;
+        background: url(./img/connextion-fond-decran.jpg) center center / cover;
+    }
+    
+    .container img {}
