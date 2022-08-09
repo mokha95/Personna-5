@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Persona 5</title>
+    <title>Persona 5 Connexion</title>
 
     <link rel="stylesheet" href="mobile.css">
     <link rel="stylesheet" href="connexion.css">
@@ -15,14 +15,48 @@
 <body>
     <section class="container">
         <!-- <img src="./img/connextion-fond-decran.jpg" alt="fond d'ecran"> -->
-        <div class="sony-logo">
-            <img src="./img/logo-sony.png" alt="logo de sony">
+        <div class="bloc-playstation">
+            <div class="sony-logo">
+                <div class="picture-sony">
+                    <img src="./img/logo-sony.png" alt="logo de sony">
+                </div>
+                <div class="bouton-croix">
+                    <i class="fa fa-times"></i>
+                </div>
+            </div>
+            <div class="logo-play-2">
+                <img src="./img/logo_playstation.png" alt="">
+            </div>
+            <!-- formulaire de connexion -->
+            <form>
+                <div class="form-groupe">
+                    <p>Connectez-vous à PlayStation avec l'un de vos comptes Sony.</p> <br> <span>En savoir plus</span>
+                    <label for="email">ID de connexion (adresse e-mail) </label>
+                    <input type="text" class="form-control" placeholder="email">
+                    <small></small>
+                    <div class="btn-suivant">
+                        <button type="submit" class="btn-connexion">Connexion</button>
+                    </div>
+                    <div class="connexion-probleme">
+                        <p>Problème de connexion ?</p>
+                    </div>
+
+                    <div class="btn-compte">
+                        <p>Créer un nouveau compte</p>
+                    </div>
+
+
+                    <div class="plan-site">
+                        <p>Aide / Plan du site</p>
+                    </div>
+                </div>
+
+            </form>
         </div>
-        <div class="bouton-croix">
-            <i class="fa fa-times"></i>
-        </div>
+
     </section>
 
+    <!-- formulaire -->
 
 
     <script src="./app.js"></script>
