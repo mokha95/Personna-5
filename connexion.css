@@ -13,6 +13,7 @@
         --couleur-blanc: #fff;
         --couleur-noir: #000;
         --couleur-bleue: #0070D1;
+        --couleur-blue-hover: #0157a2;
         --couleur-btn: #d53b00;
         --couleur-btn-hover: #7d2503;
         --couleur-background: #090A0A;
@@ -68,8 +69,60 @@
     form {
         background: white;
         width: 400px;
+        padding: 20px 50px 10px 50px;
     }
     
     form p {
         font-size: 14px;
+    }
+    
+    .form-groupe .savoir {
+        color: var(--couleur-bleue);
+        cursor: pointer;
+    }
+    
+    .form-groupe input {
+        padding: 5px;
+        width: 310px;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+    }
+    
+    .form-groupe .btn-connexion {
+        width: 310px;
+        padding: 10px;
+        background: var(--couleur-bleue);
+        color: var(--couleur-blanc);
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+    
+    .btn-connexion:hover {
+        background: var(--couleur-blue-hover);
+    }
+    
+    .form-groupe .btn-compte {
+        margin-top: 20px;
+        border: 1px solid #d9d6d6;
+        text-align: center;
+        padding: 10px;
+        font-size: 13px;
+        cursor: pointer;
+    }
+    
+    .form-groupe .btn-compte:hover {
+        background: #f1f1f1;
+    }
+    
+    .form-groupe .plan-site {
+        margin-top: 100px;
+        text-align: center;
+        color: var(--couleur-claire-hover);
+    }
+    
+    .form-groupe .plan-site:hover {
+        color: var(--couleur-bleue);
+        cursor: pointer;
     }
