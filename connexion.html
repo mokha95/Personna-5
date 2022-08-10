@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="mobile.css">
     <link rel="stylesheet" href="connexion.css">
+
     <script src="https://kit.fontawesome.com/40982bd3b7.js" crossorigin="anonymous"></script>
 </head>
 
@@ -28,14 +29,22 @@
                 <img src="./img/logo_playstation.png" alt="">
             </div>
             <!-- formulaire de connexion -->
-            <form>
+            <form action="login.php" method="POST" id="loginForm">
                 <div class="form-groupe">
                     <p>Connectez-vous à PlayStation avec l'un de vos comptes Sony. <span class="savoir">En savoir
                             plus</span></p>
                     <br>
                     <!-- <label for="email">ID de connexion (adresse e-mail) </label> -->
-                    <input type="text" class="form-control" placeholder="ID de connexion (adresse e-mail) ">
+                    <input type="text" class="form-control" name="email" placeholder="ID de connexion (adresse e-mail) ">
                     <small></small>
+
+                    <!-- mot de passe -->
+                    <div class="form-group">
+                        <!-- <label for="password">Password</label> -->
+                        <input type="text" class="form-control" id="password" placeholder="Mot de passe">
+                        <small></small>
+                    </div>
+
                     <div class="btn-suivant">
                         <button type="submit" class="btn-connexion">Suivant</button>
                     </div>
@@ -61,7 +70,7 @@
     <!-- formulaire -->
 
 
-    <script src="./app.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
