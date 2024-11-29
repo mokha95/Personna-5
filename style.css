@@ -1,612 +1,615 @@
-    *,
-     ::before,
-     ::after {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-        text-decoration: none;
-    }
-    
-     :root {
-        --couleur-sombre: #1E1F23;
-        --couleur-claire-hover: #8a8585;
-        --couleur-blanc: #fff;
-        --couleur-noir: #000;
-        --couleur-bleue: #0070D1;
-        --couleur-btn: #d53b00;
-        --couleur-btn-hover: #7d2503;
-        --couleur-background: #090A0A;
-    }
-    
-    body {
-        font-family: Arial, Helvetica, sans-serif;
-        /* overflow-x: hidden; */
-    }
-    
-    header {
-        background-color: var(--couleur-noir);
-        width: 100%;
-        height: 50px;
-    }
-    
-    nav {
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    .logo {
-        width: 80px;
-        height: auto;
-        position: absolute;
-        right: 10px;
-    }
-    
-    .liste-nav {
-        width: 100%;
-        height: 100%;
-    }
-    
-    .item-nav {
-        display: inline-block;
-        line-height: 45px;
-        margin: 0px 11px;
-        position: relative;
-    }
-    
-    .item-nav .fa-chevron-down {
-        color: #757575;
-        bottom: 11px;
-        position: absolute;
-        right: -15px;
-        font-size: 10px;
-    }
-    
-    .item-nav a {
-        text-decoration: none;
-        color: #757575;
-        font-size: 11px;
-        font-weight: bold;
-    }
-    
-    .item-nav .fa-playstation {
-        color: var(--couleur-bleue);
-        font-size: 22px;
-    }
-    
-    .item-nav a:hover {
-        color: var(--couleur-bleue);
-    }
-    
-    .btn-toggle-container {
-        display: none;
-    }
-    
-    .btn-toggle-container img {
-        width: 20px;
-    }
-    /* barre de recherche */
-    
-    .barre-de-recherche {
-        display: flex;
-        align-items: center;
-        margin-right: 2%;
-    }
-    
-    .barre-de-recherche .btn {
-        padding-right: 20px;
-    }
-    
-    .btn a {
-        text-decoration: none;
-        background-color: #363636;
-        color: #fff;
-        border-radius: 20px;
-        padding: 3px 8px;
-        font-size: 14px;
-        text-align: center;
-        font-weight: bold;
-    }
-    
-    .barre-de-recherche .fa-search {
-        color: var(--couleur-sombre);
-    }
-    /* ************************PLAYSTATION STORE*************************** */
-    
-    .Playstation-store {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        margin: 1.5% 1%;
-    }
-    
-    .Playstation-store .logo-play {
-        margin-right: 170px;
-    }
-    
-    .logo-play .fa-gamepad {
-        color: var(--couleur-bleue);
-        font-size: 20px;
-    }
-    
-    .logo-play .ps {
-        font-weight: bold;
-        cursor: pointer;
-    }
-    
-    .logo-play .tm {
-        font-size: 3px;
-        font-weight: bold;
-    }
-    
-    .sortie a {
-        text-decoration: none;
-        margin-right: 20px;
-        color: var(--couleur-noir);
-        font-weight: bold;
-        /* flex-wrap: nowrap;  */
-        font-size: 14px;
-    }
-    /* *******************************Personna*********************** */
-    
-    .personna {
-        background: url(./img/persona5\ background.webp) center center/cover;
-        height: 317px;
-        width: 100%;
-        position: relative;
-    }
-    
-    .personna .persona5 {
-        background: rgba(31, 32, 36, .97);
-        width: 465px;
-        height: 270px;
-        position: absolute;
-        top: 50%;
-        left: 10%;
-        padding: 35px 50px 20px;
-    }
-    
-    .persona5 p {
-        color: var(--couleur-blanc);
-        font-size: 30px;
-    }
-    
-    .persona5 :nth-child(2) {
-        padding: 20px 0 10px;
-        color: var(--couleur-blanc);
-        font-size: 10px;
-    }
-    
-    .persona5 .ps4 {
-        color: var(--couleur-blanc);
-        font-size: 10px;
-        border: 1px solid var(--couleur-blanc);
-        padding: 2px;
-    }
-    
-    .persona5 .price {
-        padding: 25px 0 20px;
-        color: var(--couleur-blanc);
-        font-size: 25px;
-    }
-    
-    .btn-panier {
-        display: inline-block;
-    }
-    
-    .btn-panier button {
-        background-color: var(--couleur-btn);
-        border: none;
-        height: 34px;
-        width: 335px;
-        font-size: 15px;
-        color: var(--couleur-blanc);
-        border-radius: 9999px;
-    }
-    
-    .btn-panier button:hover {
-        background-color: var(--couleur-btn-hover);
-        cursor: pointer;
-    }
-    
-    .coeur .fa-heart-o {
-        font-size: 20px;
-        margin-left: 5px;
-        background-color: rgb(55, 52, 52);
-        border-radius: 9999px;
-        padding: 10px;
-        position: absolute;
-        color: var(--couleur-blanc);
-        top: 17px;
-    }
-    
-    .coeur .fa-heart-o:hover {
-        background-color: rgb(69, 69, 69);
-        cursor: pointer;
-    }
-    /* main */
-    
-    main {
-        height: 40vh;
-        background-color: var(--couleur-background);
-    }
-    
-    .pegi16 {
-        position: absolute;
-        right: 30%;
-        padding-top: 30px;
-    }
-    
-    .pegi16 .sixteens {
-        width: 40px;
-        height: 58px;
-        margin-right: 10px;
-    }
-    
-    .pegi16 img {
-        padding-bottom: 10px;
-    }
-    
-    .prevention {
-        border-top: 15px;
-        color: var(--couleur-blanc);
-        border-top: 1px solid var(--couleur-sombre);
-    }
-    
-    .prevention p {
-        padding-top: 10px;
-        font-size: 13px;
-    }
-    
-    .bloc2 {
-        background-color: var(--couleur-background);
-        height: 20vh;
-        font-size: 13px;
-    }
-    
-    .bloc2 {
-        color: var(--couleur-blanc);
-        display: flex;
-        justify-content: space-evenly;
-    }
-    
-    .bloc2 a {
-        color: var(--couleur-blanc);
-        /* padding-bottom: 10px; */
-    }
-    
-    .bloc2 .joueur1 {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-    
-    .bloc2 .joueur2 {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .bloc2 i {
-        margin-right: 5px;
-    }
-    
-    .joueur1 .link-premeier {
-        margin-bottom: 10px;
-    }
-    
-    .joueur2 .link-one {
-        margin-bottom: 10px;
-    }
-    /* *******************************EDITIONS*********************************** */
-    
-    .edition {
-        background-color: var(--couleur-background);
-        padding: 0 40px;
-    }
-    
-    .edition h1 {
-        color: var(--couleur-blanc);
-        background-color: var(--couleur-background);
-        text-align: center;
-        font-weight: 400;
-        font-size: 30px;
-        padding-bottom: 35px;
-    }
-    
-    .edition .personna-carte {
-        flex-wrap: wrap;
-        display: flex;
-        gap: 10px;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
-    
-    .personna-carte .ultimate {
-        width: 592px;
-        height: 530px;
-        background-color: var(--couleur-noir);
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-    
-    .personna-carte img {
-        width: 65%;
-        height: 333px;
-        margin: 0 auto
-    }
-    
-    .ultimate .texte {
-        background: var(--couleur-sombre);
-        height: 198px;
-    }
-    
-    .texte p {
-        text-align: center;
-        color: var(--couleur-blanc);
-        padding: 20px 0;
-    }
-    
-    .texte span {
-        text-align: center;
-    }
-    
-    .texte .prix,
-    .barrer {
-        padding-top: 20px;
-        color: var(--couleur-blanc);
-    }
-    
-    .texte .prix {
-        font-size: 25px;
-        font-weight: 200;
-    }
-    
-    .texte .barrer {
-        color: var(--couleur-claire-hover);
-        text-decoration: line-through;
-    }
-    /* part3 */
-    
-    .part3 {
-        padding-top: 10%;
-        background-color: var(--couleur-background);
-    }
-    
-    .texte .economie {
-        color: var(--couleur-blanc);
-    }
-    
-    .texte a {
-        color: var(--couleur-claire-hover);
-        font-size: 12px;
-        padding-bottom: 20px;
-    }
-    
-    .btn-panier-2 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-    }
-    
-    .btn-panier-2 button {
-        background-color: var(--couleur-btn);
-        border: none;
-        height: 34px;
-        width: 80%;
-        font-size: 15px;
-        color: var(--couleur-blanc);
-        border-radius: 9999px;
-        margin-top: 20px;
-    }
-    
-    .btn-panier-2 button:hover {
-        background-color: rgb(154, 43, 2);
-        cursor: pointer;
-    }
-    
-    .texte .marge-droite {
-        margin-left: 30px;
-    }
-    /* extensions */
-    
-    .extensions-part h2 {
-        color: var(--couleur-blanc);
-        background-color: var(--couleur-background);
-        text-align: center;
-        font-weight: 400;
-        font-size: 30px;
-        padding-bottom: 35px;
-        padding-top: 4%;
-    }
-    
-    .extensions-part {
-        background-color: var(--couleur-background);
-        padding: 0 40px;
-    }
-    
-    .pancarte {
-        display: flex;
-        /* flex-direction: column; */
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .pancarte img {
-        width: 100%;
-        height: 286px;
-        padding-bottom: 5px;
-        border-radius: 4px;
-    }
-    
-    .pancarte .cars {
-        display: flex;
-        flex-direction: column;
-        margin-right: 10px;
-        height: 100%;
-        width: 50%;
-    }
-    
-    .cars {
-        color: var(--couleur-blanc);
-    }
-    
-    .cars a {
-        /* width: 230px; */
-        font-size: 13px;
-        color: var(--couleur-blanc);
-        line-height: 20px;
-    }
-    
-    .cars .small {
-        font-size: 12px;
-        color: var(--couleur-claire-hover);
-    }
-    
-    .bouton-bas {
-        padding-top: 5%;
-        display: flex;
-        justify-content: center;
-    }
-    
-    .bouton-bas button {
-        color: var(--couleur-blanc);
-        background: var(--couleur-background);
-        /* background-color: crimson; */
-        padding: 10px 15px;
-        border-radius: 9999px;
-        border: none;
-        font-weight: bold;
-        margin-bottom: 4%;
-    }
-    
-    .bouton-bas button:hover {
-        background: #757575;
-        cursor: pointer;
-    }
-    /*********************************** infos jeux **********************************/
-    
-    .informations {
-        text-align: center;
-        color: var(--couleur-blanc);
-        font-size: 30px;
-        padding-bottom: 50px;
-    }
-    
-    .infos-jeux {
-        /* margin-top: 4%; */
-        background-color: rgba(31, 32, 36, .97);
-        max-width: 847px;
-        height: 309px;
-        margin: auto;
-    }
-    
-    .infos-jeux .texte-rectangle p {
-        color: #b2b2b0;
-        font-size: 13px;
-        line-height: 20px;
-    }
-    
-    .infos-jeux .texte-rectangle {
-        padding: 20px 20px;
-    }
-    
-    .texte-rectangle p {
-        padding-bottom: 20px;
-    }
-    /* plateforme */
-    
-    .plateforme {
-        padding-top: 4%;
-        background-color: var(--couleur-background);
-        display: flex;
-        flex-wrap: wrap;
-        /* align-items: center; */
-        justify-content: center;
-        gap: 100px;
-    }
-    
-    .plateforme .systeme-ps4 {
-        width: 400px;
-    }
-    
-    .plateforme .medium p {
-        padding-bottom: 20px;
-        font-size: 12px;
-    }
-    
-    .plateforme .millieu p {
-        padding-bottom: 20px;
-        font-weight: bold;
-        font-size: 12px;
-    }
-    
-    .plateforme .systeme-ps4 p {
-        line-height: 20px;
-        font-size: 12px;
-    }
-    
-    .plateforme p {
-        color: var(--couleur-blanc);
-        font-size: 13px;
-    }
-    
-    .systeme-ps4 p {
-        padding-bottom: 20px;
-    }
-    /* sega */
-    
-    .sega p {
-        padding: 4% 0 4%;
-        background-color: var(--couleur-background);
-        color: var(--couleur-blanc);
-        text-align: center;
-        font-size: 15px;
-    }
-    
-    footer {
-        background-color: #003697;
-        padding: 4% 4%;
-    }
-    
-    footer {
-        color: var(--couleur-blanc);
-    }
-    
-    footer .symbole {
-        display: flex;
-        align-items: center;
-    }
-    
-    .symbole .play-4 {
-        margin-right: 50px;
-        font-size: 30px;
-    }
-    
-    .symbole .fa-globe {
-        padding-right: 10px;
-    }
-    
-    .bloc-sony {
-        margin-top: 4%;
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    .bloc-sony p {
-        padding-bottom: 20px;
-        font-size: 14px;
-    }
-    
-    .bloc-sony p:hover,
-    .fin:hover {
-        color: rgb(214, 214, 214);
-        cursor: pointer;
-    }
-    
-    footer .fin {
-        margin-top: 5%;
-        text-align: center;
-        font-size: 16px;
-    }
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+:root {
+  --couleur-sombre: #1e1f23;
+  --couleur-claire-hover: #8a8585;
+  --couleur-blanc: #fff;
+  --couleur-noir: #000;
+  --couleur-bleue: #0070d1;
+  --couleur-btn: #d53b00;
+  --couleur-btn-hover: #7d2503;
+  --couleur-background: #090a0a;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  /* overflow-x: hidden; */
+}
+
+header {
+  background-color: var(--couleur-noir);
+  width: 100%;
+  height: 50px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+  position: absolute;
+  right: 10px;
+}
+
+.liste-nav {
+  width: 100%;
+  height: 100%;
+}
+
+.item-nav {
+  display: inline-block;
+  line-height: 45px;
+  margin: 0px 11px;
+  position: relative;
+}
+
+.item-nav .fa-chevron-down {
+  color: #757575;
+  bottom: 11px;
+  position: absolute;
+  right: -15px;
+  font-size: 10px;
+}
+
+.item-nav a {
+  text-decoration: none;
+  color: #757575;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.item-nav .fa-playstation {
+  color: var(--couleur-bleue);
+  font-size: 22px;
+}
+
+.item-nav a:hover {
+  color: var(--couleur-bleue);
+}
+
+.btn-toggle-container {
+  display: none;
+}
+
+.btn-toggle-container img {
+  width: 20px;
+}
+/* barre de recherche */
+
+.barre-de-recherche {
+  display: flex;
+  align-items: center;
+  margin-right: 2%;
+}
+
+.barre-de-recherche .btn {
+  padding-right: 20px;
+}
+
+.btn a {
+  text-decoration: none;
+  background-color: #363636;
+  color: #fff;
+  border-radius: 20px;
+  padding: 3px 8px;
+  font-size: 14px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.barre-de-recherche .fa-search {
+  color: var(--couleur-sombre);
+}
+/* ************************PLAYSTATION STORE*************************** */
+
+.Playstation-store {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 1.5% 1%;
+}
+
+.Playstation-store .logo-play {
+  margin-right: 170px;
+}
+
+.logo-play .fa-gamepad {
+  color: var(--couleur-bleue);
+  font-size: 20px;
+}
+
+.logo-play .ps {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.logo-play .tm {
+  font-size: 3px;
+  font-weight: bold;
+}
+
+.sortie a {
+  text-decoration: none;
+  margin-right: 20px;
+  color: var(--couleur-noir);
+  font-weight: bold;
+  /* flex-wrap: nowrap;  */
+  font-size: 14px;
+}
+/* *******************************Personna*********************** */
+
+.personna {
+  background: url(./img/persona5\ background.webp) center center/cover;
+  height: 317px;
+  width: 100%;
+  position: relative;
+}
+
+.personaImg {
+  object-fit: cover;
+}
+.personna .persona5 {
+  background: rgba(31, 32, 36, 0.97);
+  width: 465px;
+  height: 270px;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  padding: 35px 50px 20px;
+}
+
+.persona5 p {
+  color: var(--couleur-blanc);
+  font-size: 30px;
+}
+
+.persona5 :nth-child(2) {
+  padding: 20px 0 10px;
+  color: var(--couleur-blanc);
+  font-size: 10px;
+}
+
+.persona5 .ps4 {
+  color: var(--couleur-blanc);
+  font-size: 10px;
+  border: 1px solid var(--couleur-blanc);
+  padding: 2px;
+}
+
+.persona5 .price {
+  padding: 25px 0 20px;
+  color: var(--couleur-blanc);
+  font-size: 25px;
+}
+
+.btn-panier {
+  display: inline-block;
+}
+
+.btn-panier button {
+  background-color: var(--couleur-btn);
+  border: none;
+  height: 34px;
+  width: 335px;
+  font-size: 15px;
+  color: var(--couleur-blanc);
+  border-radius: 9999px;
+}
+
+.btn-panier button:hover {
+  background-color: var(--couleur-btn-hover);
+  cursor: pointer;
+}
+
+.coeur .fa-heart-o {
+  font-size: 20px;
+  margin-left: 5px;
+  background-color: rgb(55, 52, 52);
+  border-radius: 9999px;
+  padding: 10px;
+  position: absolute;
+  color: var(--couleur-blanc);
+  top: 17px;
+}
+
+.coeur .fa-heart-o:hover {
+  background-color: rgb(69, 69, 69);
+  cursor: pointer;
+}
+/* main */
+
+main {
+  height: 40vh;
+  background-color: var(--couleur-background);
+}
+
+.pegi16 {
+  position: absolute;
+  right: 30%;
+  padding-top: 30px;
+}
+
+.pegi16 .sixteens {
+  width: 40px;
+  height: 58px;
+  margin-right: 10px;
+}
+
+.pegi16 img {
+  padding-bottom: 10px;
+}
+
+.prevention {
+  border-top: 15px;
+  color: var(--couleur-blanc);
+  border-top: 1px solid var(--couleur-sombre);
+}
+
+.prevention p {
+  padding-top: 10px;
+  font-size: 13px;
+}
+
+.bloc2 {
+  background-color: var(--couleur-background);
+  height: 20vh;
+  font-size: 13px;
+}
+
+.bloc2 {
+  color: var(--couleur-blanc);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.bloc2 a {
+  color: var(--couleur-blanc);
+  /* padding-bottom: 10px; */
+}
+
+.bloc2 .joueur1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bloc2 .joueur2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.bloc2 i {
+  margin-right: 5px;
+}
+
+.joueur1 .link-premeier {
+  margin-bottom: 10px;
+}
+
+.joueur2 .link-one {
+  margin-bottom: 10px;
+}
+/* *******************************EDITIONS*********************************** */
+
+.edition {
+  background-color: var(--couleur-background);
+  padding: 0 40px;
+}
+
+.edition h1 {
+  color: var(--couleur-blanc);
+  background-color: var(--couleur-background);
+  text-align: center;
+  font-weight: 400;
+  font-size: 30px;
+  padding-bottom: 35px;
+}
+
+.edition .personna-carte {
+  flex-wrap: wrap;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.personna-carte .ultimate {
+  width: 592px;
+  height: 530px;
+  background-color: var(--couleur-noir);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.personna-carte img {
+  width: 65%;
+  height: 333px;
+  margin: 0 auto;
+}
+
+.ultimate .texte {
+  background: var(--couleur-sombre);
+  height: 198px;
+}
+
+.texte p {
+  text-align: center;
+  color: var(--couleur-blanc);
+  padding: 20px 0;
+}
+
+.texte span {
+  text-align: center;
+}
+
+.texte .prix,
+.barrer {
+  padding-top: 20px;
+  color: var(--couleur-blanc);
+}
+
+.texte .prix {
+  font-size: 25px;
+  font-weight: 200;
+}
+
+.texte .barrer {
+  color: var(--couleur-claire-hover);
+  text-decoration: line-through;
+}
+/* part3 */
+
+.part3 {
+  padding-top: 10%;
+  background-color: var(--couleur-background);
+}
+
+.texte .economie {
+  color: var(--couleur-blanc);
+}
+
+.texte a {
+  color: var(--couleur-claire-hover);
+  font-size: 12px;
+  padding-bottom: 20px;
+}
+
+.btn-panier-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.btn-panier-2 button {
+  background-color: var(--couleur-btn);
+  border: none;
+  height: 34px;
+  width: 80%;
+  font-size: 15px;
+  color: var(--couleur-blanc);
+  border-radius: 9999px;
+  margin-top: 20px;
+}
+
+.btn-panier-2 button:hover {
+  background-color: rgb(154, 43, 2);
+  cursor: pointer;
+}
+
+.texte .marge-droite {
+  margin-left: 30px;
+}
+/* extensions */
+
+.extensions-part h2 {
+  color: var(--couleur-blanc);
+  background-color: var(--couleur-background);
+  text-align: center;
+  font-weight: 400;
+  font-size: 30px;
+  padding-bottom: 35px;
+  padding-top: 4%;
+}
+
+.extensions-part {
+  background-color: var(--couleur-background);
+  padding: 0 40px;
+}
+
+.pancarte {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+}
+
+.pancarte img {
+  width: 100%;
+  height: 286px;
+  padding-bottom: 5px;
+  border-radius: 4px;
+}
+
+.pancarte .cars {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  height: 100%;
+  width: 50%;
+}
+
+.cars {
+  color: var(--couleur-blanc);
+}
+
+.cars a {
+  /* width: 230px; */
+  font-size: 13px;
+  color: var(--couleur-blanc);
+  line-height: 20px;
+}
+
+.cars .small {
+  font-size: 12px;
+  color: var(--couleur-claire-hover);
+}
+
+.bouton-bas {
+  padding-top: 5%;
+  display: flex;
+  justify-content: center;
+}
+
+.bouton-bas button {
+  color: var(--couleur-blanc);
+  background: var(--couleur-background);
+  /* background-color: crimson; */
+  padding: 10px 15px;
+  border-radius: 9999px;
+  border: none;
+  font-weight: bold;
+  margin-bottom: 4%;
+}
+
+.bouton-bas button:hover {
+  background: #757575;
+  cursor: pointer;
+}
+/*********************************** infos jeux **********************************/
+
+.informations {
+  text-align: center;
+  color: var(--couleur-blanc);
+  font-size: 30px;
+  padding-bottom: 50px;
+}
+
+.infos-jeux {
+  /* margin-top: 4%; */
+  background-color: rgba(31, 32, 36, 0.97);
+  max-width: 847px;
+  height: 309px;
+  margin: auto;
+}
+
+.infos-jeux .texte-rectangle p {
+  color: #b2b2b0;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.infos-jeux .texte-rectangle {
+  padding: 20px 20px;
+}
+
+.texte-rectangle p {
+  padding-bottom: 20px;
+}
+/* plateforme */
+
+.plateforme {
+  padding-top: 4%;
+  background-color: var(--couleur-background);
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  justify-content: center;
+  gap: 100px;
+}
+
+.plateforme .systeme-ps4 {
+  width: 400px;
+}
+
+.plateforme .medium p {
+  padding-bottom: 20px;
+  font-size: 12px;
+}
+
+.plateforme .millieu p {
+  padding-bottom: 20px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.plateforme .systeme-ps4 p {
+  line-height: 20px;
+  font-size: 12px;
+}
+
+.plateforme p {
+  color: var(--couleur-blanc);
+  font-size: 13px;
+}
+
+.systeme-ps4 p {
+  padding-bottom: 20px;
+}
+/* sega */
+
+.sega p {
+  padding: 4% 0 4%;
+  background-color: var(--couleur-background);
+  color: var(--couleur-blanc);
+  text-align: center;
+  font-size: 15px;
+}
+
+footer {
+  background-color: #003697;
+  padding: 4% 4%;
+}
+
+footer {
+  color: var(--couleur-blanc);
+}
+
+footer .symbole {
+  display: flex;
+  align-items: center;
+}
+
+.symbole .play-4 {
+  margin-right: 50px;
+  font-size: 30px;
+}
+
+.symbole .fa-globe {
+  padding-right: 10px;
+}
+
+.bloc-sony {
+  margin-top: 4%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bloc-sony p {
+  padding-bottom: 20px;
+  font-size: 14px;
+}
+
+.bloc-sony p:hover,
+.fin:hover {
+  color: rgb(214, 214, 214);
+  cursor: pointer;
+}
+
+footer .fin {
+  margin-top: 5%;
+  text-align: center;
+  font-size: 16px;
+}
